@@ -21,9 +21,7 @@ function Baddie() {
     <section className="baddie-section" id="baddie">
       <h1 id="greeting">{greeting}, I am Akrithi Prashanth</h1>
       <p className="tagline">
-        I am a tech enthusiast from Bangalore. I am currently pursuing my
-        undergraduate degree from Ramaiah University of Applied Sciences in the
-        information science field.
+       I’m a tech enthusiast from Bangalore, currently pursuing my undergraduate degree in Information Science. I’m passionate about Data Science, AI/ML, and Python, while also exploring web development and IoT.
       </p>
       <a href="#projects" className="btn btn-primary">
         View projects
