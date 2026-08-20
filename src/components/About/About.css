@@ -1,47 +1,57 @@
+.abouts-section {
+  padding: 0;
+}
+
 .abouts-section .wrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  max-width: 1000px;
+  align-items: stretch;
+  gap: 0;
+  max-width: 1400px;
   margin: 0 auto;
   flex-wrap: wrap;
-  padding: 80px 5%;
 }
 
 .abouts-section .profile {
-  flex: 0 0 260px;
+  flex: 1 1 400px;
+  min-height: 500px;
 }
 
 .abouts-section .profile img {
-  width: 380px;
-  height: 520px;
-  max-width: 100%;
+  width: 90%;
+  height: 80%;
+  min-height: 500px;
   object-fit: cover;
+  display: block;
+  margin-top: 10%;
 }
 
 .abouts-section .intro {
-  flex: 1;
-  min-width: 280px;
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 6%;
 }
 
 .abouts-section .intro h2 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+  font-size: 3rem;
+  margin-bottom: 20px;
   text-align: left;
   color: #610027;
+  line-height: 1.1;
 }
 
 .abouts-section .intro h2::after {
-  margin: 12px 0 0;
-  background-color: #912B48;
+  display: none; /* remove the centered underline — doesn't suit a left-aligned hero heading */
 }
 
 .abouts-section .intro p {
-  line-height: 1.8;
-  opacity: 0.85;
+  line-height: 1.9;
+  opacity: 0.9;
   margin-bottom: 12px;
   color: #912B48;
+  font-size: 1.05rem;
+  max-width: 640px;
 }
 
 body[data-theme='dark'] .abouts-section {
@@ -57,26 +67,22 @@ body[data-theme='dark'] .abouts-section .intro p {
   color: #B45A69;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .abouts-section .wrapper {
     flex-direction: column;
-    text-align: center;
-    padding: 60px 5%;
   }
 
-  .abouts-section .profile {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
+  .abouts-section .profile,
   .abouts-section .profile img {
-    width: 260px;
-    height: 340px;
+    min-height: 340px;
+  }
+
+  .abouts-section .intro {
+    padding: 40px 6%;
+    text-align: left;
   }
 
   .abouts-section .intro h2 {
-    text-align: center;
+    font-size: 2.2rem;
   }
 }

@@ -57,7 +57,7 @@ function Navbar({ theme, toggleTheme }) {
             aria-label="toggle darkmode"
             onClick={toggleTheme}
           >
-            {theme === 'dark' ? '☀' : '⏾'}
+            {theme === 'dark' ? '☀' : ' ⏾'}
           </button>
           <button
             className="nav-toggle"

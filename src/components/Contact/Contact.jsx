@@ -37,7 +37,7 @@ function Contact() {
   }
 
   const buttonLabel =
-    status === 'sending' ? 'sending...' : status === 'sent' ? '✅Message sent' : 'submit'
+    status === 'sending' ? 'sending...' : status === 'sent' ? ' ✔ Message sent' : 'submit'
 
   return (
     <section id="contact" class="contact-section">
