@@ -21,7 +21,7 @@ function Baddie() {
     <section className="baddie-section" id="baddie">
       <h1 id="greeting">{greeting}, I am Akrithi Prashanth</h1>
       <p className="tagline">
-        I am a <Tech></Tech> enthusiast from Bangalore. I am currently pursuing my
+        I am a tech enthusiast from Bangalore. I am currently pursuing my
         undergraduate degree from Ramaiah University of Applied Sciences in the
         information science field.
       </p>
