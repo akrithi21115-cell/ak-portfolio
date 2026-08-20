@@ -1,0 +1,36 @@
+.site-footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 40px 5%;
+}
+
+.site-footer nav {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.site-footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+body[data-theme='dark'] .site-footer {
+  background: #1a0a0d;
+  color: #d9b8ba;
+}
+
+body[data-theme='dark'] .site-footer a {
+  color: #ecdcdc;
+}
+
+body[data-theme='dark'] .site-footer a:hover {
+  color: #c9414f;
+}

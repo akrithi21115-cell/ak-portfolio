@@ -1,0 +1,80 @@
+.baddie-section {
+  background: linear-gradient(135deg, rgb(105, 47, 56), rgb(231, 152, 166), rgb(150, 35, 54));
+  color: rgb(82, 8, 8);
+  text-align: center;
+  padding: 100px 5%;
+}
+
+.baddie-section h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  animation: fadeinup 0.8s ease;
+}
+
+.baddie-section .tagline {
+  animation: fadeinup 0.8s ease;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.baddie-section .btn {
+  margin: 0 8px;
+}
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    border-radius:9px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size:1rem;
+    border:2px transparent;
+}
+.btn-primary{
+    background-color: #b36a6a;
+    color:white;
+}
+.btn-primary:hover{
+    background-color:#6b2525 ;
+    border-color:#6b2525;
+    color:white;
+}
+.btn-secondary{
+    background-color:#b36a6a ;
+    color:white;
+}
+.btn-secondary:hover{
+    background-color:#6b2525 ;
+    border-color:#6b2525;
+    color:white;
+}
+
+body[data-theme='dark'] .baddie-section {
+  background: linear-gradient(135deg, #0a0405, #43191f, #1a0a0d);
+  color: #ecdcdc;
+}
+body[data-theme="dark"] .btn-primary {
+     background: #5c1a20;
+    color: #ffffff;
+   
+}
+
+body[data-theme="dark"] .btn-primary:hover {
+    background: #c9414f;
+    border-color: #c9414f;
+}
+
+body[data-theme="dark"] .btn-secondary {
+    background: #5c1a20;
+    color: #ffffff;
+}
+
+body[data-theme="dark"] .btn-secondary:hover {
+    background: #c9414f;
+    border-color: #c9414f;
+}
+
+@media (max-width: 768px) {
+  .baddie-section h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,121 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: var(--primary);
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dark-toggle,
+.nav-toggle {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.dark-toggle:hover,
+.nav-toggle:hover {
+  background-color: rgba(74, 21, 33, 0.481);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--blank);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: var(--primary);
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    gap: 20px;
+  }
+  .nav-list.open {
+    display: flex;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+}
+
+body[data-theme='dark'] .site-header,
+body[data-theme='dark'] .navbar {
+  background-color: #1a0a0d;
+  color: #ecdcdc;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+body[data-theme='dark'] .nav-list a {
+  color: #d9b8ba;
+}
+
+body[data-theme='dark'] .nav-list a:hover,
+body[data-theme='dark'] .nav-list a.active {
+  color: #c9414f;
+}
+
+body[data-theme='dark'] .nav-list.open {
+  background: #260e13;
+}
+
+body[data-theme='dark'] .logo {
+  color: #ecdcdc;
+}
+
+body[data-theme='dark'] .dark-toggle,
+body[data-theme='dark'] .nav-toggle {
+  color: #ecdcdc;
+}
+
+body[data-theme='dark'] .dark-toggle:hover,
+body[data-theme='dark'] .nav-toggle:hover {
+  background-color: rgba(201, 65, 79, 0.25);
+}

@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+:root{
+    --primary:#cd8888;
+    --accent:rgb(117, 9, 27);
+    --text:rgb(66, 8, 66);
+    --blank:rgba(255, 255, 255, 0.9);
+    --font-mail: "Times New Roman", Times, serif;
+}
+
+body{
+    font-family:var(--font-main);
+    color: var(--text);
+
+    line-height:1.6;
+    background-color: var(--blank);
+}
