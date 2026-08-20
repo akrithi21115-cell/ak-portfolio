@@ -16,9 +16,8 @@
 .abouts-section .profile img {
   width: 380px;
   height: 520px;
+  max-width: 100%;
   object-fit: cover;
-  
- 
 }
 
 .abouts-section .intro {
@@ -62,7 +61,21 @@ body[data-theme='dark'] .abouts-section .intro p {
   .abouts-section .wrapper {
     flex-direction: column;
     text-align: center;
+    padding: 60px 5%;
   }
+
+  .abouts-section .profile {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .abouts-section .profile img {
+    width: 260px;
+    height: 340px;
+  }
+
   .abouts-section .intro h2 {
     text-align: center;
   }
